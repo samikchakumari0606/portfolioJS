@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://media.tenor.com/j-tsFFh4_RMAAAAM/welcome-cover.gif">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="header-text">
+                <div>
+                   
+                    <h1>Hi, I am <span>Samiksha</span> <br />an Aspirant Frontend Developer</h1>
+                   
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/name1.jpg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello Sir, My Name Is Samikcha Kumari. I Had Worked as a Supervisor at
+                        Rudranee InfoTech limited with an excellent leadership skilled ability to perform
+                        well in a team. I always try to inhance my knowledge, skill and experience. Thank
+                        you..
+                    </p>
+
+                    <!-- tabs -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Expreince</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- tab contents -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br> HTML,CSS,JavaScript,React,Bootstrap,Ajax,DOM,JSON,JQuery</li>
+                            <li><span>React Developer</span><br>React.js,Bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020-2021</span><br> Supervisor at Rudranee InfoTech</li>
+                            <li><span>2019-2020</span><br>Computer Operator at District Agriculture Department</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Full Stack Web Development Course From UDEMY</li>
+                            <li><span>2023</span><br>React Developer Course from UDEMY</li>
+                            <li><span>2019</span><br>Bachelor in Computer Application</li>
+                            <li><span>2016</span><br>Intermediate in Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- services section -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <h2>Supervisor</h2>
+                    <p>
+                        Worked as a Supervisor in Rudrane InfoTech Pvt limited.
+                        As a Supervisor I had managed more than 55 diffrent government department and also
+                         handle more than 15 people in particular project.
+                    </p>
+                   
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Computer Operetor</h2>
+                    <p> Worked as computer operator in District Agriculture Office. In which I has managed all the records and other computer related work.
+                    </p>
+                   
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Mywork section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Flipkart App</h3>
+                        <p>I have made this an e-commerce app using JavaScript. In which user can see the product and add to cart the product as well.</p>
+                        <a href="https://samikchakumari0606.github.io/E-Commerce/">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png">
+
+                    <div class="layer">
+                        <h3>You Tube App</h3>
+                        <p>I have made you-tube app using JavaScript. It worked almost same as you-tube. In Which I have use html,css,JavaScript and local Storage.</p>
+                        <a href="https://samikchakumari0606.github.io/YoutubeJS/">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png">
+
+                    <div class="layer">
+                        <h3>React Portfolio</h3>
+                        <p>I have made portfolio app in react. This app is completely responsive.</p>
+                        <a href="https://github.com/samikchakumari0606/ReactPortfolio">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> email: samikchaprasad0606@gmail.com</p>
+                    <p> phone: 8340703278</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/samikchakumari0606?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <!-- download pdf portfolio -->
+
+                    <a href="./images/Resume.pdf" download class=" btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea row="6" placeholder="Your Message"></textarea>
+                        <input type="submit" class=" btn btn2" />
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright @Samiksha. Made with</p>
+        </div>
+    </div>
+
+ 
+
+
+</body>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    }
+</script>
+
+<script>
+
+var sidemenu=document.getElementById("sidemenu");
+
+function openmenu(){
+       sidemenu.style.right="0";
+}
+
+function closemenu(){
+       sidemenu.style.right="-200px";
+}
+</script>
+
+</html>
+<script src="./index.js"></script>
